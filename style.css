@@ -5,16 +5,18 @@ body{
     justify-content: center;
     min-height: calc(100vh - 0.1px);
     max-width: calc(100vw-0.1px);
-    background-color: blueviolet;
+    background-image: url('bg.jpg');
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 
 .main{
     padding: 2rem;
-    background-color: #2E0C50;
+    background-color: #3b105e;
     border-radius: 0.25rem;
-    box-shadow: 6px 8px #492171;
+    border: thin solid #230739;
+    box-shadow: 25px 20px 50px #0c0413;
     max-width: 20rem;
 }
 
@@ -25,14 +27,17 @@ body{
 }
 
 #pw{
-    background-color: #3d1466;
     width: calc(100% - 2rem);
     padding: 1.5rem 1rem;
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: white;
-    box-shadow: 4px 4px #5b2d88;
-    border: none;
+    background-color: #7128a9;
+    border: solid thin #b568e2;
+    border-radius: 0.2rem;
+    /* box-shadow: 4px 5px #b568e2; */
+    box-shadow: 8px 12px 25px #0c0413;
+
 }
 
 .form{
@@ -43,6 +48,7 @@ label{
     color: white;
     letter-spacing: 1px;
     word-spacing: 2px;
+    padding-top: 3px;
 }
 
 input{
@@ -51,19 +57,41 @@ input{
     display: flex;
     align-items: right;
     justify-content: end;
+    cursor: pointer;
+    box-shadow: 5px 8px 25px #0c0413;
+}
+
+#len{
+    background-color: #833fb7;
+    border: solid thin #7e24b2;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    padding: 2px 0 2px 10px;
+    font-weight: 600;
+}
+
+input[type=checkbox]{
+    height: 15px;
+    width: 15px;
+    accent-color: #9a4fd3;
 }
 
 #generate{
     width: 100%;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border-style: ridge;
-    border-width: 4px;
-    border-color: #a076c9;
-    background-color: rgb(255, 239, 170);
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    background-color: #5d1c83;
+    border: solid thin #7e24b2;
+    box-shadow: 8px 12px 25px #0c0413;
     cursor: pointer;
-    font-weight: 700;
-    font-style: italic;
-    color: #5b2d88;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+}
+
+#generate:hover{
+    background-color: #6c2097;
+    box-shadow: 10px 15px 25px #0c0413;
 }
